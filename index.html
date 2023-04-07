@@ -23,10 +23,10 @@ https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css
   <body>
     <header class="header">
       <div class="container page-header-container">
+        <a class="logo link" href="./index.html"
+          >Web<span class="header-logo-studio">Studio</span>
+        </a>
         <nav class="menu">
-          <a class="logo link" href="./index.html"
-            >Web<span class="header-logo-studio">Studio</span>
-          </a>
           <ul class="list flex-list">
             <li class="menu-item">
               <a class="secondary-link link nav-index" href="./index.html"
@@ -41,9 +41,10 @@ https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css
             </li>
           </ul>
         </nav>
+      
         <!-- contacts -->
         <address class="address">
-          <ul class="list flex-list">
+          <ul class="list address-flex-list">
             <li class="address-list">
               <a class="mail link" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
@@ -56,24 +57,97 @@ https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css
             </li>
           </ul>
         </address>
+          <button type="button" class="js-open-menu mobile-menu-open">
+          <svg class="mobile-menu-open-icon" width="32" height="22">
+            <use href="./images/sprite.svg#icon-charm_menu-hamburger"></use>
+          </svg>
+        </button>
+      </div>
+       <div class="js-menu-container mobile-menu">
+        <div class="container mobile-menu-container">
+          
+            <button class="mobile-menu-clouse-btn js-close-menu">
+            <svg class="mobile-menu-clouse-icon" width="24" height="24">
+              <use href="./images/sprite.svg#icon-cross"></use>
+            </svg>
+          </button>
+          <div>
+          <ul class="mobile-menu-nav list">
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-list link" href="./index.html">Studio</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-list link" href="./portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-list-contacs link" href="">Contacts</a>
+            </li>
+          </ul>
+          </div>
+          <div>
+          <ul class="mobile-list-contact list">
+            <li class="mobile-address-list">
+              <a class="mobile-menu-list-contacs link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="mobile-address-list">
+              <a class="mobile-mail link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="social-list list">
+            <li class="social-list-item">
+              <a class="social-list-link" href="">
+                <svg class="social-list-icon" width="24" height="24">
+                  <use href="./images/sprite.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list-item">
+              <a class="social-list-link" href="">
+                <svg class="social-list-icon" width="24" height="24">
+                  <use href="./images/sprite.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list-item">
+              <a class="social-list-link" href="">
+                <svg class="social-list-icon" width="24" height="24">
+                  <use href="./images/sprite.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list-item">
+              <a class="social-list-link" href="">
+                <svg class="social-list-icon" width="24" height="24">
+                  <use href="./images/sprite.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          </div>
+        </div> 
       </div>
     </header>
     <!-- main  -->
-    <main>
-      <!-- HERO -->
-      <section class="section-hero">
-        <div class="container hero-container">
-          <h1 class="text-hero">Effective Solutions for Your Business</h1>
+     <main>
+    <!-- HERO -->
+    <section class="section-hero">
+        <div class="container">
+          <h1 class="text-hero">Effective Solutions     for Your Business</h1>
           <button class="button-main" data-modal-open type="button">
             Order Service
           </button>
-        </div>
-      </section>
-      <!-- section2 -->
-      <section class="secondary-section">
+        </div> 
+     </section>
+    <!-- section2 -->
+     <section class="secondary-section">
         <div class="container">
           <h2 hidden>features</h2>
-
           <ul class="list secondary-flex-list">
             <li class="secondary-section-list">
               <div class="secondary-list-item">
@@ -87,14 +161,14 @@ https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css
                 the perfect and creative solution.
               </p>
             </li>
-
             <li class="secondary-section-list">
               <div class="secondary-list-item">
                 <svg class="secondary-list-icon" width="64" height="64">
                   <use href="./images/sprite.svg#icon-punctuality"></use>
                 </svg>
               </div>
-              <h3 class="title-description">Punctuality</h3>
+              <h3 class="title-description">Punctuality
+              </h3>
               <p class="text-description">
                 Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
@@ -126,9 +200,9 @@ https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css
             </li>
           </ul>
         </div>
-      </section>
-      <!-- What are we doing -->
-      <section class="works-container">
+      </section> 
+    <!-- What are we doing -->
+    <!-- <section class="works-container">
         <div class="container">
           <h2 class="title-text">What are we doing</h2>
           <ul class="list flex-list section-list works-secondary-flex">
@@ -158,9 +232,9 @@ https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css
             </li>
           </ul>
         </div>
-      </section>
-      <!-- Team -->
-      <section class="team-section">
+      </section> -->
+    <!-- Team -->
+    <!-- <section class="team-section">
         <div class="container team-container">
           <h2 class="title-text">Our Team</h2>
           <ul class="list flex-list">
@@ -173,9 +247,9 @@ https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css
               />
               <div class="team-card-wrapper">
                 <h3 class="team-text">Mark Guerrero</h3>
-                <p class="team-secondary-text">Product Designer</p>
-                <!-- social-list -->
-                <ul class="social-list list">
+                <p class="team-secondary-text">Product Designer</p> -->
+    <!-- social-list -->
+    <!-- <ul class="social-list list">
                   <li class="social-list-item">
                     <a class="social-list-link" href="">
                       <svg class="social-list-icon" width="16" height="16">
@@ -335,9 +409,9 @@ https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css
             </li>
           </ul>
         </div>
-      </section>
-      <!-- Customers -->
-      <section class="customers-container">
+      </section> -->
+    <!-- Customers -->
+    <!-- <section class="customers-container">
         <div class="container">
           <h2 class="title-text">Customers</h2>
           <ul class="list customers-list">
@@ -388,7 +462,7 @@ https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css
       </section>
     </main>
     <!-- footer -->
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container container-media">
         <div class="footer-container">
           <a class="logo link" href="./index.html"
@@ -431,9 +505,9 @@ https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css
               </a>
             </li>
           </ul>
-        </div>
-        <!-- footer-form -->
-        <form class="footer-form">
+        </div> -->
+    <!-- footer-form -->
+    <!-- <form class="footer-form">
           <p class="social-media-text">Subscribe</p>
           <div class="footer-form-wraper">
             <label class="footer-label">
@@ -453,9 +527,9 @@ https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css
           </div>
         </form>
       </div>
-    </footer>
+    </footer> -->
     <!-- bekdrop -->
-    <div class="bekdrop is-hidden" data-modal>
+    <!-- <div class="bekdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-close-btn" data-modal-close type="button">
           <svg class="close-icon-btn" width="8" height="8">
@@ -531,5 +605,9 @@ https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css
         </form>
       </div>
     </div>
+    
+  </body>
+</html> -->
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
