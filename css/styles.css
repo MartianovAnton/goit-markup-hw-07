@@ -67,7 +67,7 @@ button {
 /* --------------------mobile-------------------- */
 /* --------------------header-------------------- */
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 766px) {
   .menu {
     display: none;
   }
@@ -82,7 +82,7 @@ button {
 }
 /*--------------- mobile-menu----------------- */
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 766px) {
   .logo {
     margin-right: 0;
   }
@@ -191,7 +191,7 @@ button {
   }
   /*------------- HERO mobile---------------------- */
   .section-hero {
-    min-height: 432px;
+    min-height: 428px;
     background: var(--title-color);
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -229,6 +229,7 @@ button {
     margin-bottom: 72px;
     margin-right: auto;
     margin-left: auto;
+    max-width: 320px;
   }
   .button-main {
     font-weight: 500;
@@ -252,11 +253,12 @@ button {
   .secondary-list-icon {
     display: none;
   }
-  .secondary-section-list {
+  .secondary-section-list:not(:last-child) {
     margin-bottom: 72px;
   }
   .secondary-section {
     padding-top: 96px;
+    padding-bottom: 96px;
   }
   .title-description {
     font-weight: 700;
@@ -389,6 +391,7 @@ button {
 
     margin-top: 16px;
     text-align: left;
+    max-width: 268px;
   }
   .footer {
     background-color: var(--footer-beckground-color);
@@ -410,7 +413,6 @@ button {
     display: flex;
     justify-content: center;
     gap: 15px;
-    margin-top: 16px;
   }
   .footer-container {
     text-align: center;
@@ -636,6 +638,7 @@ button {
     margin-bottom: 36px;
     margin-right: auto;
     margin-left: auto;
+    max-width: 496px;
   }
   .button-main {
     font-weight: 500;
@@ -720,13 +723,13 @@ button {
     padding: 0px;
     margin: 0px;
     list-style: none;
-    margin-left: -24px;
-    margin-top: -64px;
+    margin-right: -24px;
+    margin-top: -72px;
   }
   .team-section {
     background-color: var(--team-section-color);
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 96px;
+    padding-bottom: 96px;
   }
   .team-img {
     background-color: var(--main-background-color);
@@ -815,8 +818,8 @@ button {
   }
   .footer {
     background-color: var(--footer-beckground-color);
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 96px;
+    padding-bottom: 96px;
   }
   .footer-flex {
     margin-right: 0;
@@ -941,6 +944,7 @@ button {
   }
   .address-list:not(:last-child) {
     margin-right: 40px;
+    margin-bottom: 0;
   }
   .address-flex-list {
     display: flex;
@@ -983,6 +987,9 @@ button {
     background: var(--hover-focus-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+  }
+  .text-hero {
+    margin-bottom: 48px;
   }
   /* ===========Desktop Section2========== */
   .secondary-flex-list {
@@ -1034,7 +1041,11 @@ button {
   .works-container-list:not(:last-child) {
     margin-right: 24px;
   }
-
+  /* ============== Desktop team========= */
+  .team-section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
   /* ============== Desktop Customers========= */
   .customers-container {
     padding-bottom: 120px;
@@ -1098,6 +1109,10 @@ button {
   }
   .footer-input-icon {
     margin-left: 16px;
+  }
+  .footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
 }
 /* ===============LOGO============== */
@@ -1403,6 +1418,7 @@ button {
   border-radius: 2px;
   cursor: pointer;
   margin-right: 8px;
+  flex-shrink: 0;
 }
 .modal-form-check:checked + .modal-form-check-desc::before {
   background-image: url(../images/vector.svg);
